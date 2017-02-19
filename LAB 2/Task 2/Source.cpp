@@ -37,10 +37,10 @@ int main()
 	{
 		if (e > 0 && e < 1)
 		{
-			cout << "Enter x (from -1 to 1): ";
+			cout << "Enter x (from -6.28 to 6.28): ";
 			if (cin >> x)
 			{
-				if (x >= -1 && x <= 1)
+				if (x >= -6.28 && x <= 6.28)
 				{
 					int i{ 1 };
 
