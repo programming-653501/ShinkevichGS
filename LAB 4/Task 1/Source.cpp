@@ -14,18 +14,18 @@ void keep_window_open()
 
 string fix(string text)
 {
-	text = regex_replace(text, regex("жы"), "жи");
-	text = regex_replace(text, regex("Жы"), "Жи");
-	text = regex_replace(text, regex("шы"), "ши");
-	text = regex_replace(text, regex("Шы"), "Ши");
-	text = regex_replace(text, regex("чя"), "ча");
-	text = regex_replace(text, regex("Чя"), "Ча");
-	text = regex_replace(text, regex("щя"), "ща");
-	text = regex_replace(text, regex("Щя"), "Ща");
-	text = regex_replace(text, regex("чю"), "чу");
-	text = regex_replace(text, regex("Чю"), "Чу");
-	text = regex_replace(text, regex("щю"), "щу");
-	text = regex_replace(text, regex("Щю"), "Щу");
+	text = regex_replace(text, regex("Р¶С‹"), "Р¶Рё");
+	text = regex_replace(text, regex("Р–С‹"), "Р–Рё");
+	text = regex_replace(text, regex("С€С‹"), "С€Рё");
+	text = regex_replace(text, regex("РЁС‹"), "РЁРё");
+	text = regex_replace(text, regex("С‡СЏ"), "С‡Р°");
+	text = regex_replace(text, regex("Р§СЏ"), "Р§Р°");
+	text = regex_replace(text, regex("С‰СЏ"), "С‰Р°");
+	text = regex_replace(text, regex("Р©СЏ"), "Р©Р°");
+	text = regex_replace(text, regex("С‡СЋ"), "С‡Сѓ");
+	text = regex_replace(text, regex("Р§СЋ"), "Р§Сѓ");
+	text = regex_replace(text, regex("С‰СЋ"), "С‰Сѓ");
+	text = regex_replace(text, regex("Р©СЋ"), "Р©Сѓ");
 
 	return text;
 }
@@ -48,7 +48,7 @@ int main()
 {
 	localization();
 
-	cout << "Введите текст: " << endl;
+	cout << "Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚: " << endl;
 	string text;
 	while (getline(cin, text) && text != "#")
 	{
@@ -56,20 +56,20 @@ int main()
 		{
 			if (diff(text, fix(text)))
 			{
-				cout << "\nИсправленный текст:\n" << fix(text) << endl;
-				cout << "Количество ошибок: " << diff(text, fix(text)) << endl << endl;
+				cout << "\nРСЃРїСЂР°РІР»РµРЅРЅС‹Р№ С‚РµРєСЃС‚:\n" << fix(text) << endl;
+				cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС€РёР±РѕРє: " << diff(text, fix(text)) << endl << endl;
 			}
 			else
-				cout << "Нет ошибок." << endl << endl;
-			cout << "Введите текст ('#' для выхода): " << endl;
+				cout << "РќРµС‚ РѕС€РёР±РѕРє." << endl << endl;
+			cout << "Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚ ('#' РґР»СЏ РІС‹С…РѕРґР°): " << endl;
 		}
 		else
 		{
-			cout << "Вы ничего не ввели, введите что-нибудь: " << endl;
+			cout << "Р’С‹ РЅРёС‡РµРіРѕ РЅРµ РІРІРµР»Рё, РІРІРµРґРёС‚Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ: " << endl;
 		}
 	}
 
-	cout << "Выход...";
+	cout << "Р’С‹С…РѕРґ...";
 
 	keep_window_open();
 

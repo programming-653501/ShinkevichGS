@@ -1,4 +1,4 @@
-/* Решение системы линейных уравнений методом Гаусса */
+/* Р РµС€РµРЅРёРµ СЃРёСЃС‚РµРјС‹ Р»РёРЅРµР№РЅС‹С… СѓСЂР°РІРЅРµРЅРёР№ РјРµС‚РѕРґРѕРј Р“Р°СѓСЃСЃР° */
 /* version 1.0 (kostyl edition)*/
 
 
@@ -51,7 +51,7 @@ vector<double> gauss(vector< vector<double> > matrix)
 
 	for (int i{ 0 }; i < dim; i++) 
 	{
-		// Поиск максимума в столбце
+		// РџРѕРёСЃРє РјР°РєСЃРёРјСѓРјР° РІ СЃС‚РѕР»Р±С†Рµ
 		double max_el{ abs(matrix.at(i).at(i)) };
 		int max_row{ i };
 		for (int j{ i + 1 }; j < dim; j++)
@@ -63,7 +63,7 @@ vector<double> gauss(vector< vector<double> > matrix)
 			}
 		}
 
-		// Поменять местами максимальную и текущую строку
+		// РџРѕРјРµРЅСЏС‚СЊ РјРµСЃС‚Р°РјРё РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ Рё С‚РµРєСѓС‰СѓСЋ СЃС‚СЂРѕРєСѓ
 		for (int j{ i }; j < dim + 1; j++) 
 		{
 			double temp{ matrix.at(max_row).at(j) };
@@ -71,7 +71,7 @@ vector<double> gauss(vector< vector<double> > matrix)
 			matrix.at(i).at(j) = temp;
 		}
 
-		// Приведение к треугольному виду
+		// РџСЂРёРІРµРґРµРЅРёРµ Рє С‚СЂРµСѓРіРѕР»СЊРЅРѕРјСѓ РІРёРґСѓ
 		for (int k{ i + 1 }; k < dim; k++)
 		{
 			double c{ -matrix.at(k).at(i) / matrix.at(i).at(i) };
@@ -85,7 +85,7 @@ vector<double> gauss(vector< vector<double> > matrix)
 		}
 	}
 
-	// Проверка на совместность и определнность
+	// РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРІРјРµСЃС‚РЅРѕСЃС‚СЊ Рё РѕРїСЂРµРґРµР»РЅРЅРѕСЃС‚СЊ
 	for (int i{ 0 }; i < dim; i++)
 	{
 		bool zero_row{ true };
@@ -107,7 +107,7 @@ vector<double> gauss(vector< vector<double> > matrix)
 	}
 
 
-	// Решение системы для верхней треугольной матрицы
+	// Р РµС€РµРЅРёРµ СЃРёСЃС‚РµРјС‹ РґР»СЏ РІРµСЂС…РЅРµР№ С‚СЂРµСѓРіРѕР»СЊРЅРѕР№ РјР°С‚СЂРёС†С‹
 	vector<double> x(dim);
 	for (int i{ dim - 1 }; i >= 0; i--)
 	{
