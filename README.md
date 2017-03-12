@@ -6,3 +6,5 @@
 [LAB 3](https://github.com/programming-653501/ShinkevichGS/tree/master/LAB%203) - done.
 
 [LAB 4](https://github.com/programming-653501/ShinkevichGS/tree/master/LAB%204) - done.
+
+[LAB 6](https://github.com/programming-653501/ShinkevichGS/tree/master/LAB%206) - done.
