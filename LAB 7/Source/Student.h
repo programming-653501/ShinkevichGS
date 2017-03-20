@@ -50,13 +50,13 @@ string Student::FacultyName(int faculty)
 {
 	switch (faculty)
 	{
-	case 1: return "ÔÊÏ"; break;
-	case 2: return "ÔÈÒÓ"; break;
-	case 3: return "ÔĞİ"; break;
-	case 4: return "ÔÊÑèÑ"; break;
-	case 5: return "ÔÒÊ"; break;
-	case 6: return "ÈİÔ"; break;
-	default: return "Âîåíêà"; break;
+	case 1: return "Ğ¤ĞšĞŸ"; break;
+	case 2: return "Ğ¤Ğ˜Ğ¢Ğ£"; break;
+	case 3: return "Ğ¤Ğ Ğ­"; break;
+	case 4: return "Ğ¤ĞšĞ¡Ğ¸Ğ¡"; break;
+	case 5: return "Ğ¤Ğ¢Ğš"; break;
+	case 6: return "Ğ˜Ğ­Ğ¤"; break;
+	default: return "Ğ’Ğ¾ĞµĞ½ĞºĞ°"; break;
 	}
 }
 

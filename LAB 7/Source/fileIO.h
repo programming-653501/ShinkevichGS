@@ -3,8 +3,8 @@
 
 void write(vector<Student> student)
 {
-	cout << "Çàïèñü â ôàéë: " << endl;
-	cout << "# Èìÿ ôàéëà: ";
+	cout << "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð² Ñ„Ð°Ð¹Ð»: " << endl;
+	cout << "# Ð˜Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°: ";
 	string name;
 	cin >> name;
 	ofstream db{ name };
@@ -30,10 +30,10 @@ void write(vector<Student> student)
 			db << ")";
 			db << endl;
 		}
-		cout << "Çàïèñü ïðîøëà óñïåøíî." << endl;
+		cout << "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð¿Ñ€Ð¾ÑˆÐ»Ð° ÑƒÑÐ¿ÐµÑˆÐ½Ð¾." << endl;
 	}
 	else
-		cout << "Îøèáêà çàïèñè!" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð·Ð°Ð¿Ð¸ÑÐ¸!" << endl;
 }
 
 unsigned int lines_count(string name)
@@ -50,8 +50,8 @@ unsigned int lines_count(string name)
 
 void read(vector<Student> &student)
 {
-	cout << "Îòêðûòèå ôàéëà: " << endl;
-	cout << "# Èìÿ ôàéëà: ";
+	cout << "ÐžÑ‚ÐºÑ€Ñ‹Ñ‚Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°: " << endl;
+	cout << "# Ð˜Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°: ";
 	string name;
 	cin >> name;
 	ifstream db{ name };
@@ -94,8 +94,8 @@ void read(vector<Student> &student)
 			student.at(i).SetId(Id);
 			student.at(i).SetViolations(Violations);
 		}
-		cout << "Ôàéë óñïåøíî îòêðûò." << endl;
+		cout << "Ð¤Ð°Ð¹Ð» ÑƒÑÐ¿ÐµÑˆÐ½Ð¾ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚." << endl;
 	}
 	else
-		cout << "Îøèáêà ÷òåíèÿ!" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ñ‡Ñ‚ÐµÐ½Ð¸Ñ!" << endl;
 }
