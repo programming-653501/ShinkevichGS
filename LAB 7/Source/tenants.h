@@ -36,11 +36,11 @@ void set_id(vector<Student> &student, int i)
 void set_name(vector<Student> &student, int i)
 {
 	string text;
-	cout << "# Ğ˜Ğ¼Ñ: ";
+	cout << "# Èìÿ: ";
 	while (!(cin >> text))
 	{
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-		cout << "# Ğ˜Ğ¼Ñ: ";
+		cout << "Íåïğàâèëüíûé ââîä!" << endl;
+		cout << "# Èìÿ: ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -51,11 +51,11 @@ void set_name(vector<Student> &student, int i)
 void set_surname(vector<Student> &student, int i)
 {
 	string text;
-	cout << "# Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ: ";
+	cout << "# Ôàìèëèÿ: ";
 	while (!(cin >> text))
 	{
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-		cout << "# Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ: ";
+		cout << "Íåïğàâèëüíûé ââîä!" << endl;
+		cout << "# Ôàìèëèÿ: ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -66,11 +66,11 @@ void set_surname(vector<Student> &student, int i)
 void set_patronymic(vector<Student> &student, int i)
 {
 	string text;
-	cout << "# ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾: ";
+	cout << "# Îò÷åñòâî: ";
 	while (!(cin >> text))
 	{
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-		cout << "# ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾: ";
+		cout << "Íåïğàâèëüíûé ââîä!" << endl;
+		cout << "# Îò÷åñòâî: ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -81,11 +81,11 @@ void set_patronymic(vector<Student> &student, int i)
 void set_faculty(vector<Student> &student, int i)
 {
 	int number;
-	cout << "# Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚ (1 - Ğ¤ĞšĞŸ, 2 - Ğ¤Ğ˜Ğ¢Ğ£, 3 - Ğ¤Ğ Ğ­, 4 - Ğ¤ĞšĞ¡Ğ¸Ğ¡, 5 - Ğ¤Ğ¢Ğš, 6 - Ğ˜Ğ­Ğ¤): ";
+	cout << "# Ôàêóëüòåò (1 - ÔÊÏ, 2 - ÔÈÒÓ, 3 - ÔĞİ, 4 - ÔÊÑèÑ, 5 - ÔÒÊ, 6 - ÈİÔ): ";
 	while (!(cin >> number) || number < 1 || number > 6)
 	{
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-		cout << "# Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚ (1 - Ğ¤ĞšĞŸ, 2 - Ğ¤Ğ˜Ğ¢Ğ£, 3 - Ğ¤Ğ Ğ­, 4 - Ğ¤ĞšĞ¡Ğ¸Ğ¡, 5 - Ğ¤Ğ¢Ğš, 6 - Ğ˜Ğ­Ğ¤): ";
+		cout << "Íåïğàâèëüíûé ââîä!" << endl;
+		cout << "# Ôàêóëüòåò (1 - ÔÊÏ, 2 - ÔÈÒÓ, 3 - ÔĞİ, 4 - ÔÊÑèÑ, 5 - ÔÒÊ, 6 - ÈİÔ): ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -96,11 +96,11 @@ void set_faculty(vector<Student> &student, int i)
 void set_course(vector<Student> &student, int i)
 {
 	int number;
-	cout << "# ĞšÑƒÑ€Ñ (1 - 5): ";
+	cout << "# Êóğñ (1 - 5): ";
 	while (!(cin >> number) || number < 1 || number > 5)
 	{
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-		cout << "# ĞšÑƒÑ€Ñ (1 - 5): ";
+		cout << "Íåïğàâèëüíûé ââîä!" << endl;
+		cout << "# Êóğñ (1 - 5): ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -111,11 +111,11 @@ void set_course(vector<Student> &student, int i)
 void set_group(vector<Student> &student, int i)
 {
 	int number;
-	cout << "# Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ° (100000 - 999999): ";
+	cout << "# Ãğóïïà (100000 - 999999): ";
 	while (!(cin >> number) || number < 100000 || number > 999999)
 	{
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-		cout << "# Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ° (100000 - 999999): ";
+		cout << "Íåïğàâèëüíûé ââîä!" << endl;
+		cout << "# Ãğóïïà (100000 - 999999): ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -143,18 +143,18 @@ void set_room(vector<Student> &student, int i)
 	vector<int> rooms = rooms_list(student);
 
 	int number;
-	cout << "# ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°: ";
+	cout << "# Êîìíàòà: ";
 	while (!(cin >> number) || number < 100 || number > 699 ||
 		find(rooms.begin(), rooms.end(), number) != rooms.end() || !stage_check(student, i, number))
 	{
 		if (cin.fail() || number < 100 || number > 699)
-			cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
+			cout << "Íåïğàâèëüíûé ââîä!" << endl;
 		else if (!stage_check(student, i, number))
-			cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ ÑÑ‚Ğ°Ğ¶!" << endl;
+			cout << "Íåïğàâèëüíûé ıòàæ!" << endl;
 		else if (find(rooms.begin(), rooms.end(), number) != rooms.end())
-			cout << "ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ° Ğ·Ğ°Ğ½ÑÑ‚Ğ°" << endl;
+			cout << "Êîìíàòà çàíÿòà" << endl;
 
-		cout << "# ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°: ";
+		cout << "# Êîìíàòà: ";
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 	}
@@ -165,23 +165,23 @@ void set_room(vector<Student> &student, int i)
 void violations_check(vector<Student> student, int i)
 {
 	if (student.at(i).GetViolations().size() > 3)
-		cout << "ĞŸĞ¾Ñ€Ğ° Ğ²Ñ‹ÑĞµĞ»ÑÑ‚ÑŒ ÑÑ‚Ğ¾Ğ³Ğ¾ Ğ½Ğ°Ñ€ÑƒÑˆĞ¸Ñ‚ĞµĞ»Ñ!" << endl;
+		cout << "Ïîğà âûñåëÿòü ıòîãî íàğóøèòåëÿ!" << endl;
 }
 
 void set_violations(vector<Student> &student, int i)
 {
 	vector<string> text = student.at(i).GetViolations();
-	cout << "ĞĞ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ñ: " << endl;
+	cout << "Íàğóøåíèÿ: " << endl;
 	for (unsigned int i{ 0 }; i < text.size(); i++)
-		cout << "â„– " << i + 1 << " " << text.at(i) << endl;
+		cout << "¹ " << i + 1 << " " << text.at(i) << endl;
 
 	violations_check(student, i);
 
-	cout << "1. Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ Ğ½Ğ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ğµ" << endl;
-	cout << "2. Ğ£Ğ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ Ğ½Ğ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ğµ" << endl;
-	cout << "3. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << endl;
+	cout << "1. Äîáàâèòü íàğóøåíèå" << endl;
+	cout << "2. Óäàëèòü íàğóøåíèå" << endl;
+	cout << "3. Âûõîä" << endl;
 	int choice;
-	cout << "# Ğ’Ğ²Ğ¾Ğ´: ";
+	cout << "# Ââîä: ";
 	while (cin >> choice && choice != 3)
 	{
 		text = student.at(i).GetViolations();
@@ -190,11 +190,11 @@ void set_violations(vector<Student> &student, int i)
 		case 1:
 		{
 			string violation;
-			cout << "# ĞĞ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ğµ: ";
+			cout << "# Íàğóøåíèå: ";
 			while (!(cin >> violation))
 			{
-				cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
-				cout << "# ĞĞ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ğµ: ";
+				cout << "Íåïğàâèëüíûé ââîä!" << endl;
+				cout << "# Íàğóøåíèå: ";
 				cin.clear();
 				cin.ignore(0xFFFFFFFF, '\n');
 			}
@@ -204,38 +204,38 @@ void set_violations(vector<Student> &student, int i)
 		}
 		case 2:
 		{
-			cout << "# ĞĞ¾Ğ¼ĞµÑ€ Ğ½Ğ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ñ: ";
+			cout << "# Íîìåğ íàğóøåíèÿ: ";
 			unsigned int pos;
 			cin >> pos;
 			if (!cin.fail() && pos > 0 && pos <= text.size())
 				text.erase(text.begin() + pos - 1);
 			else
-				cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ½Ğ¾Ğ¼ĞµÑ€!" << endl;
+				cout << "Íåïğàâèëüíûé íîìåğ!" << endl;
 			student.at(i).SetViolations(text);
 			break;
 		}
-		default: cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
+		default: cout << "Íåïğàâèëüíûé ââîä!" << endl;
 		}
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
 
-		cout << "ĞĞ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ñ: " << endl;
+		cout << "Íàğóøåíèÿ: " << endl;
 		for (unsigned int i{ 0 }; i < text.size(); i++)
-			cout << "â„–" << i + 1 << " " << text.at(i) << endl;
+			cout << "¹" << i + 1 << " " << text.at(i) << endl;
 
 		violations_check(student, i);
 
-		cout << "1. Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ Ğ½Ğ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ğµ" << endl;
-		cout << "2. Ğ£Ğ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ Ğ½Ğ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ğµ" << endl;
-		cout << "3. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << endl;
-		cout << "# Ğ’Ğ²Ğ¾Ğ´: ";
+		cout << "1. Äîáàâèòü íàğóøåíèå" << endl;
+		cout << "2. Óäàëèòü íàğóøåíèå" << endl;
+		cout << "3. Âûõîä" << endl;
+		cout << "# Ââîä: ";
 	}
 	cin.clear();
 }
 
 void settle(vector<Student> &student)
 {
-	cout << "Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¶Ğ¸Ğ»ÑŒÑ†Ğ°: " << endl;
+	cout << "Äîáàâëåíèå æèëüöà: " << endl;
 	student.resize(student.size() + 1);
 
 	set_id(student, student.size() - 1);
@@ -247,28 +247,28 @@ void settle(vector<Student> &student)
 	set_group(student, student.size() - 1);
 	set_room(student, student.size() - 1);
 
-	cout << "Ğ–Ğ¸Ğ»ĞµÑ† Ğ·Ğ°ÑĞµĞ»Ñ‘Ğ½." << endl;
+	cout << "Æèëåö çàñåë¸í." << endl;
 }
 
 void student_info(vector<Student> student, int i)
 {
 	cout << "ID: " << student.at(i).GetId() << endl;
-	cout << "Ğ˜Ğ¼Ñ: " << student.at(i).GetName() << endl;
-	cout << "Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ: " << student.at(i).GetSurname() << endl;
-	cout << "ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾: " << student.at(i).GetPatronymic() << endl;
-	cout << "Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚: " << student.at(i).FacultyName(student.at(i).GetFaculty()) << endl;
-	cout << "ĞšÑƒÑ€Ñ: " << student.at(i).GetCourse() << endl;
-	cout << "Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°: " << student.at(i).GetGroup() << endl;
-	cout << "ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°: " << student.at(i).GetRoom() << endl;
+	cout << "Èìÿ: " << student.at(i).GetName() << endl;
+	cout << "Ôàìèëèÿ: " << student.at(i).GetSurname() << endl;
+	cout << "Îò÷åñòâî: " << student.at(i).GetPatronymic() << endl;
+	cout << "Ôàêóëüòåò: " << student.at(i).FacultyName(student.at(i).GetFaculty()) << endl;
+	cout << "Êóğñ: " << student.at(i).GetCourse() << endl;
+	cout << "Ãğóïïà: " << student.at(i).GetGroup() << endl;
+	cout << "Êîìíàòà: " << student.at(i).GetRoom() << endl;
 }
 
 void modify(vector<Student> &student)
 {
 	vector<int> list = id_list(student);
 
-	cout << "Ğ˜Ğ·Ğ¼ĞµĞ½ĞµĞ½Ğ¸Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ…: " << endl;
+	cout << "Èçìåíåíèå äàííûõ: " << endl;
 	int id;
-	cout << "# ID ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°: ";
+	cout << "# ID ñòóäåíòà: ";
 	cin >> id;	
 	if (!cin.fail() && find(list.begin(), list.end(), id) != list.end())
 	{
@@ -277,10 +277,10 @@ void modify(vector<Student> &student)
 			if (id == student.at(i).GetId())
 				pos = i;
 
-		cout << "Ğ¡Ñ‚ÑƒĞ´ĞµĞ½Ñ‚: " << endl;
+		cout << "Ñòóäåíò: " << endl;
 		student_info(student, pos);
-		cout << "# Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ»Ğµ (1 - Ğ˜Ğ¼Ñ, 2 - Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ, 3 - ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾, 4 - Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚, 5 - ĞšÑƒÑ€Ñ, ";
-		cout << "6 - Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°, 7 - ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°, 8 - ĞĞ°Ñ€ÑƒÑˆĞµĞ½Ğ¸Ñ): ";
+		cout << "# Âûáåğèòå ïîëå (1 - Èìÿ, 2 - Ôàìèëèÿ, 3 - Îò÷åñòâî, 4 - Ôàêóëüòåò, 5 - Êóğñ, ";
+		cout << "6 - Ãğóïïà, 7 - Êîìíàòà, 8 - Íàğóøåíèÿ): ";
 		int field;
 		cin >> field;
 		switch (field)
@@ -293,17 +293,17 @@ void modify(vector<Student> &student)
 		case 6: set_group(student, pos); break;
 		case 7: set_room(student, pos); break;
 		case 8: set_violations(student, pos); break;
-		default: cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
+		default: cout << "Íåïğàâèëüíûé ââîä!" << endl;
 		}
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
-		cout << "Ğ ĞµĞ´Ğ°ĞºÑ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ğµ Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½Ğ¾." << endl;
+		cout << "Ğåäàêòèğîâàíèå çàâåğøåíî." << endl;
 	}
 	else
 	{
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ ID!" << endl;
+		cout << "Íåïğàâèëüíûé ID!" << endl;
 	}
 }
 
@@ -311,9 +311,9 @@ void evict(vector<Student> &student)
 {
 	vector<int> list = id_list(student);
 
-	cout << "Ğ’Ñ‹ÑĞµĞ»ĞµĞ½Ğ¸Ğµ: " << endl;
+	cout << "Âûñåëåíèå: " << endl;
 	int id;
-	cout << "# ID ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°: ";
+	cout << "# ID ñòóäåíòà: ";
 	cin >> id;
 	if (!cin.fail() && find(list.begin(), list.end(), id) != list.end())
 	{
@@ -322,22 +322,22 @@ void evict(vector<Student> &student)
 			if (id == student.at(i).GetId())
 				pos = i;
 
-		cout << "Ğ¡Ñ‚ÑƒĞ´ĞµĞ½Ñ‚: " << endl;
+		cout << "Ñòóäåíò: " << endl;
 		student_info(student, pos);
 		int confirm;
-		cout << "# Ğ¥Ğ¾Ñ‚Ğ¸Ñ‚Ğµ Ğ²Ñ‹ÑĞµĞ»Ğ¸Ñ‚ÑŒ ÑÑ‚Ğ¾Ğ³Ğ¾ ÑÑ‚ÑƒĞ´ĞµĞ½Ñ‚Ğ°? (1 - Ğ”Ğ°, 0 - ĞĞµÑ‚): ";
+		cout << "# Õîòèòå âûñåëèòü ıòîãî ñòóäåíòà? (1 - Äà, 0 - Íåò): ";
 		cin >> confirm;
 		if (confirm)
 		{
 			student.erase(student.begin() + pos);
-			cout << "Ğ¡Ñ‚ÑƒĞ´ĞµĞ½Ñ‚ Ğ²Ñ‹ÑĞµĞ»ĞµĞ½!" << endl;
+			cout << "Ñòóäåíò âûñåëåí!" << endl;
 		}
 	}
 	else
 	{
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
-		cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ ID!" << endl;
+		cout << "Íåïğàâèëüíûé ID!" << endl;
 	}
 }
 
@@ -357,18 +357,22 @@ void student_list(vector<Student> student, int i)
 void search_field(vector<Student> student, string p, int val)
 {
 	if (p == "id")
+	{
 		for (unsigned int i{ 0 }; i < student.size(); i++)
 			if (val == student.at(i).GetId())
 				student_info(student, i);
+	}
 	else if (p == "room")
+	{
 		for (unsigned int i{ 0 }; i < student.size(); i++)
 			if (val == student.at(i).GetRoom())
 				student_info(student, i);
+	}
 	else if (p == "faculty")
 	{
-		cout << setw(4) << "â„–" << setw(f_size) << "Ğ˜Ğ¼Ñ" << setw(f_size) << "Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ" << setw(f_size) << "ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾";
-		cout << setw(f_size) << "Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚" << setw(f_size) << "ĞšÑƒÑ€Ñ" << setw(f_size) << "Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°";
-		cout << setw(f_size) << "ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°" << setw(f_size) << "ID" << endl;
+		cout << setw(4) << "¹" << setw(f_size) << "Èìÿ" << setw(f_size) << "Ôàìèëèÿ" << setw(f_size) << "Îò÷åñòâî";
+		cout << setw(f_size) << "Ôàêóëüòåò" << setw(f_size) << "Êóğñ" << setw(f_size) << "Ãğóïïà";
+		cout << setw(f_size) << "Êîìíàòà" << setw(f_size) << "ID" << endl;
 
 		for (unsigned int i{ 0 }; i < student.size(); i++)
 			if (val == student.at(i).GetFaculty())
@@ -376,9 +380,9 @@ void search_field(vector<Student> student, string p, int val)
 	}
 	else if (p == "course")
 	{
-		cout << setw(4) << "â„–" << setw(f_size) << "Ğ˜Ğ¼Ñ" << setw(f_size) << "Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ" << setw(f_size) << "ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾";
-		cout << setw(f_size) << "Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚" << setw(f_size) << "ĞšÑƒÑ€Ñ" << setw(f_size) << "Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°";
-		cout << setw(f_size) << "ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°" << setw(f_size) << "ID" << endl;
+		cout << setw(4) << "¹" << setw(f_size) << "Èìÿ" << setw(f_size) << "Ôàìèëèÿ" << setw(f_size) << "Îò÷åñòâî";
+		cout << setw(f_size) << "Ôàêóëüòåò" << setw(f_size) << "Êóğñ" << setw(f_size) << "Ãğóïïà";
+		cout << setw(f_size) << "Êîìíàòà" << setw(f_size) << "ID" << endl;
 
 		for (unsigned int i{ 0 }; i < student.size(); i++)
 			if (val == student.at(i).GetCourse())
@@ -386,9 +390,9 @@ void search_field(vector<Student> student, string p, int val)
 	}
 	else if (p == "group")
 	{
-		cout << setw(4) << "â„–" << setw(f_size) << "Ğ˜Ğ¼Ñ" << setw(f_size) << "Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ" << setw(f_size) << "ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾";
-		cout << setw(f_size) << "Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚" << setw(f_size) << "ĞšÑƒÑ€Ñ" << setw(f_size) << "Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°";
-		cout << setw(f_size) << "ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°" << setw(f_size) << "ID" << endl;
+		cout << setw(4) << "¹" << setw(f_size) << "Èìÿ" << setw(f_size) << "Ôàìèëèÿ" << setw(f_size) << "Îò÷åñòâî";
+		cout << setw(f_size) << "Ôàêóëüòåò" << setw(f_size) << "Êóğñ" << setw(f_size) << "Ãğóïïà";
+		cout << setw(f_size) << "Êîìíàòà" << setw(f_size) << "ID" << endl;
 
 		for (unsigned int i{ 0 }; i < student.size(); i++)
 			if (val == student.at(i).GetGroup())
@@ -399,16 +403,18 @@ void search_field(vector<Student> student, string p, int val)
 void search_field(vector<Student> student, string p, string val)
 {
 	if (p == "surname")
+	{
 		for (unsigned int i{ 0 }; i < student.size(); i++)
 			if (val == student.at(i).GetSurname())
 				student_info(student, i);
+	}
 }
 
 void search(vector<Student> student)
 {
 	int field;
-	cout << "ĞŸĞ¾Ğ¸ÑĞº: " << endl;
-	cout << "# Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ¿Ğ¾Ğ»Ğµ (1 - ID, 2 - Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ, 3 - ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°, 4 - Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚, 5 - ĞšÑƒÑ€Ñ, 6 - Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°): ";
+	cout << "Ïîèñê: " << endl;
+	cout << "# Âûáåğèòå ïîëå (1 - ID, 2 - Ôàìèëèÿ, 3 - Êîìíàòà, 4 - Ôàêóëüòåò, 5 - Êóğñ, 6 - Ãğóïïà): ";
 	cin >> field;
 	switch (field)
 	{
@@ -418,7 +424,7 @@ void search(vector<Student> student)
 		cout << "# ID: ";
 		if (cin >> id)
 		{
-			cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹: " << endl;
+			cout << "Ğåçóëüòàòû: " << endl;
 			search_field(student, "id", id);
 		}
 		cin.clear();
@@ -427,10 +433,10 @@ void search(vector<Student> student)
 	case 2:
 	{
 		string surname;
-		cout << "# Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ: ";
+		cout << "# Ôàìèëèÿ: ";
 		if (cin >> surname)
 		{
-			cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹: " << endl;
+			cout << "Ğåçóëüòàòû: " << endl;
 			search_field(student, "surname", surname);
 		}
 		cin.clear();
@@ -439,10 +445,10 @@ void search(vector<Student> student)
 	case 3:
 	{
 		int room;
-		cout << "# ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°: ";
+		cout << "# Êîìíàòà: ";
 		if (cin >> room)
 		{
-			cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹: " << endl;
+			cout << "Ğåçóëüòàòû: " << endl;
 			search_field(student, "room", room);
 		}
 		cin.clear();
@@ -451,10 +457,10 @@ void search(vector<Student> student)
 	case 4:
 	{
 		int faculty;
-		cout << "# Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚ (1 - Ğ¤ĞšĞŸ, 2 - Ğ¤Ğ˜Ğ¢Ğ£, 3 - Ğ¤Ğ Ğ­, 4 - Ğ¤ĞšĞ¡Ğ¸Ğ¡, 5 - Ğ¤Ğ¢Ğš, 6 - Ğ˜Ğ­Ğ¤): ";
+		cout << "# Ôàêóëüòåò (1 - ÔÊÏ, 2 - ÔÈÒÓ, 3 - ÔĞİ, 4 - ÔÊÑèÑ, 5 - ÔÒÊ, 6 - ÈİÔ): ";
 		if (cin >> faculty)
 		{
-			cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹: " << endl;
+			cout << "Ğåçóëüòàòû: " << endl;
 			search_field(student, "faculty", faculty);
 		}
 		cin.clear();
@@ -463,10 +469,10 @@ void search(vector<Student> student)
 	case 5:
 	{
 		int course;
-		cout << "# ĞšÑƒÑ€Ñ: ";
+		cout << "# Êóğñ: ";
 		if (cin >> course)
 		{
-			cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹: " << endl;
+			cout << "Ğåçóëüòàòû: " << endl;
 			search_field(student, "course", course);
 		}
 		cin.clear();
@@ -475,28 +481,28 @@ void search(vector<Student> student)
 	case 6:
 	{
 		int group;
-		cout << "# Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°: ";
+		cout << "# Ãğóïïà: ";
 		if (cin >> group)
 		{
-			cout << "Ğ ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ñ‹: " << endl;
+			cout << "Ğåçóëüòàòû: " << endl;
 			search_field(student, "group", group);
 		}
 		cin.clear();
 		break;
 	}
-	default: cout << "ĞĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
+	default: cout << "Íåïğàâèëüíûé ââîä!" << endl;
 	}
 	cin.clear();
 	cin.ignore(0xFFFFFFFF, '\n');
-	cout << "ĞŸĞ¾Ğ¸ÑĞº Ğ·Ğ°Ğ²ĞµÑ€ÑˆĞµĞ½." << endl;
+	cout << "Ïîèñê çàâåğøåí." << endl;
 }
 
 void full_info(vector<Student> student)
 {
-	cout << "Ğ¡Ğ¿Ğ¸ÑĞ¾Ğº Ğ¶Ğ¸Ğ»ÑŒÑ†Ğ¾Ğ²: " << endl;
-	cout << setw(4) << "â„–" << setw(f_size) << "Ğ˜Ğ¼Ñ" << setw(f_size) << "Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ" << setw(f_size) << "ĞÑ‚Ñ‡ĞµÑÑ‚Ğ²Ğ¾";
-	cout << setw(f_size) << "Ğ¤Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚" << setw(f_size) << "ĞšÑƒÑ€Ñ" << setw(f_size) << "Ğ“Ñ€ÑƒĞ¿Ğ¿Ğ°";
-	cout << setw(f_size) << "ĞšĞ¾Ğ¼Ğ½Ğ°Ñ‚Ğ°" << setw(f_size) << "ID" << endl;
+	cout << "Ñïèñîê æèëüöîâ: " << endl;
+	cout << setw(4) << "¹" << setw(f_size) << "Èìÿ" << setw(f_size) << "Ôàìèëèÿ" << setw(f_size) << "Îò÷åñòâî";
+	cout << setw(f_size) << "Ôàêóëüòåò" << setw(f_size) << "Êóğñ" << setw(f_size) << "Ãğóïïà";
+	cout << setw(f_size) << "Êîìíàòà" << setw(f_size) << "ID" << endl;
 
 	for (unsigned int i{ 0 }; i < student.size(); i++)
 		student_list(student, i);
@@ -504,14 +510,14 @@ void full_info(vector<Student> student)
 
 void report(vector<Student> student)
 {
-	cout << "ĞÑ‚Ñ‡Ñ‘Ñ‚: " << endl;
-	cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ¶Ğ¸Ğ»ÑŒÑ†Ğ¾Ğ²: " << student.size() << endl;
-	cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑĞ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ñ‹Ñ… Ğ¼ĞµÑÑ‚: " << 600 - student.size() << endl;
+	cout << "Îò÷¸ò: " << endl;
+	cout << "Êîëè÷åñòâî æèëüöîâ: " << student.size() << endl;
+	cout << "Êîëè÷åñòâî ñâîáîäíûõ ìåñò: " << 600 - student.size() << endl;
 
-	cout << "1. ĞŸĞ¾ÑĞ¼Ğ¾Ñ‚Ñ€ĞµÑ‚ÑŒ Ğ¿Ğ¾ Ñ„Ğ°ĞºÑƒĞ»ÑŒÑ‚ĞµÑ‚Ğ°Ğ¼" << endl;
-	cout << "2. Ğ’Ñ‹Ñ…Ğ¾Ğ´" << endl;
+	cout << "1. Ïîñìîòğåòü ïî ôàêóëüòåòàì" << endl;
+	cout << "2. Âûõîä" << endl;
 	int choice;
-	cout << "# Ğ’Ğ²Ğ¾Ğ´: ";
+	cout << "# Ââîä: ";
 	if (cin >> choice && choice != 2)
 	{
 		switch (choice)
@@ -531,22 +537,22 @@ void report(vector<Student> student)
 				case 6: faculties.at(5)++; break;
 				}
 			}
-			cout << "Ğ—Ğ°Ğ½ÑÑ‚Ğ¾ Ğ¤ĞšĞŸ: " << faculties.at(0) << endl;
-			cout << "Ğ¡Ğ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ğ¾ Ğ´Ğ»Ñ Ğ¤ĞšĞŸ: " << 100 - faculties.at(0) << endl;
-			cout << "Ğ—Ğ°Ğ½ÑÑ‚Ğ¾ Ğ¤Ğ˜Ğ¢Ğ£: " << faculties.at(1) << endl;
-			cout << "Ğ¡Ğ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ğ¾ Ğ´Ğ»Ñ Ğ¤Ğ˜Ğ¢Ğ£: " << 100 - faculties.at(1) << endl;
-			cout << "Ğ—Ğ°Ğ½ÑÑ‚Ğ¾ Ğ¤Ğ Ğ­: " << faculties.at(2) << endl;
-			cout << "Ğ¡Ğ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ğ¾ Ğ´Ğ»Ñ Ğ¤Ğ Ğ­: " << 100 - faculties.at(2) << endl;
-			cout << "Ğ—Ğ°Ğ½ÑÑ‚Ğ¾ Ğ¤ĞšĞ¡Ğ¸Ğ¡: " << faculties.at(3) << endl;
-			cout << "Ğ¡Ğ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ğ¾ Ğ´Ğ»Ñ Ğ¤ĞšĞ¡Ğ¸Ğ¡: " << 100 - faculties.at(3) << endl;
-			cout << "Ğ—Ğ°Ğ½ÑÑ‚Ğ¾ Ğ¤Ğ¢Ğš: " << faculties.at(4) << endl;
-			cout << "Ğ¡Ğ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ğ¾ Ğ´Ğ»Ñ Ğ¤Ğ¢Ğš: " << 100 - faculties.at(4) << endl;
-			cout << "Ğ—Ğ°Ğ½ÑÑ‚Ğ¾ Ğ˜Ğ­Ğ¤: " << faculties.at(5) << endl;
-			cout << "Ğ¡Ğ²Ğ¾Ğ±Ğ¾Ğ´Ğ½Ğ¾ Ğ´Ğ»Ñ Ğ˜Ğ­Ğ¤: " << 100 - faculties.at(5) << endl;
-			cout << "ĞšĞ¾Ğ½ĞµÑ† Ğ¾Ñ‚Ñ‡Ñ‘Ñ‚Ğ°." << endl;
+			cout << "Çàíÿòî ÔÊÏ: " << faculties.at(0) << endl;
+			cout << "Ñâîáîäíî äëÿ ÔÊÏ: " << 100 - faculties.at(0) << endl;
+			cout << "Çàíÿòî ÔÈÒÓ: " << faculties.at(1) << endl;
+			cout << "Ñâîáîäíî äëÿ ÔÈÒÓ: " << 100 - faculties.at(1) << endl;
+			cout << "Çàíÿòî ÔĞİ: " << faculties.at(2) << endl;
+			cout << "Ñâîáîäíî äëÿ ÔĞİ: " << 100 - faculties.at(2) << endl;
+			cout << "Çàíÿòî ÔÊÑèÑ: " << faculties.at(3) << endl;
+			cout << "Ñâîáîäíî äëÿ ÔÊÑèÑ: " << 100 - faculties.at(3) << endl;
+			cout << "Çàíÿòî ÔÒÊ: " << faculties.at(4) << endl;
+			cout << "Ñâîáîäíî äëÿ ÔÒÊ: " << 100 - faculties.at(4) << endl;
+			cout << "Çàíÿòî ÈİÔ: " << faculties.at(5) << endl;
+			cout << "Ñâîáîäíî äëÿ ÈİÔ: " << 100 - faculties.at(5) << endl;
+			cout << "Êîíåö îò÷¸òà." << endl;
 			break;
 		}
-		default: cout << "ĞĞµĞ²ĞµÑ€Ğ½Ñ‹Ğ¹ Ğ²Ğ²Ğ¾Ğ´!" << endl;
+		default: cout << "Íåâåğíûé ââîä!" << endl;
 		}
 		cin.clear();
 		cin.ignore(0xFFFFFFFF, '\n');
