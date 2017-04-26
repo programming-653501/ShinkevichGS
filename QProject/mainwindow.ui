@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tram17</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QPushButton 
+{ 
+	font: 75 14pt &quot;DS Eraser Cyr&quot;;
+background-color: rgb(212, 212, 212);
+border-style: outset;
+border-radius: 15px;
+border-width: 3px;
+border-color: white;
+padding: 7px;
+}
+QPushButton:hover
+{ 
+background-color: black;
+color: white;
+ }
+QPushButton:pressed
+{
+border-style: inset;
+}
+QWidget#centralWidget {
+background-color: rgb(212, 212, 212);}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <widget class="QLabel" name="titleLabel">
+      <property name="font">
+       <font>
+        <family>DS Eraser Cyr</family>
+        <pointsize>32</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>17-й Трамвай</string>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignBottom">
+     <widget class="QWidget" name="verticalWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="newGameButton">
+         <property name="font">
+          <font>
+           <family>DS Eraser Cyr</family>
+           <pointsize>14</pointsize>
+           <weight>9</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Новая игра</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="continueButton">
+         <property name="text">
+          <string>Продолжить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="achievementsButton">
+         <property name="text">
+          <string>Достижения</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="quitButton">
+         <property name="text">
+          <string>Выход</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

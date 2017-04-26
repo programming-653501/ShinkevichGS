@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sounds/19B - 0x0000008D.mp3</file>
+    </qresource>
+</RCC>
