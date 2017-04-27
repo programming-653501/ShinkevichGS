@@ -1,5 +1,5 @@
 # Shinkevich's Repository
-# Курсовая: Текстовый квест ("17-й трамвай") - [Исходный код](https://github.com/programming-653501/ShinkevichGS/tree/master/QProject)/[Билд](https://drive.google.com/open?id=0B575oj7VMeH1eEg1ZVRnMmszTGs)
+# Курсовая: Текстовый квест ("17-й трамвай") - [Исходный код](https://github.com/programming-653501/ShinkevichGS/tree/master/QProject)/[Билд](https://drive.google.com/open?id=0B575oj7VMeH1eEg1ZVRnMmszTGs)/[ZIP-архив](https://drive.google.com/open?id=0B575oj7VMeH1a2h2aHR2c1R4b2c)
 
 
 [LAB 1](https://github.com/programming-653501/ShinkevichGS/tree/master/LAB%201) - done.
